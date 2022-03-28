@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.javatechie.spring.drools.api.SpringDroolsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.942 s <<< FAILURE! - in com.javatechie.spring.drools.api.SpringDroolsApplicationTests
+contextLoads(com.javatechie.spring.drools.api.SpringDroolsApplicationTests)  Time elapsed: 0.004 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'megaOfferController': Unsatisfied dependency expressed through field 'session'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.kie.api.runtime.KieSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.kie.api.runtime.KieSession' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+
